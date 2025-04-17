@@ -14,7 +14,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from umi device
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
-PRODUCT_NAME := lineage_umi
+PRODUCT_NAME := orion_umi
 PRODUCT_DEVICE := umi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
@@ -25,3 +25,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="umi-user 13 RKQ1.211001.001 V14.0.5.0.TJBMIXM release-keys" \
     BuildFingerprint=Xiaomi/umi_global/umi:13/RKQ1.211001.001/V14.0.5.0.TJBMIXM:user/release-keys
+
+# OrionOS build flags
+ORION_MAINTAINER := objecting_
+ORION_MAINTAINER_LINK := https://t.me/objectfigure
+ORION_BUILD_TYPE := Unofficial
+ORION_GAPPS := true
